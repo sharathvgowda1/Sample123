@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="1" parallel="tests" name="Failed suite [CBSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="1" parallel="tests" name="Test(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="com.shophunt.product.testngtest.MyAccountTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="browserLaunch"/>
+          <include name="connectToDB"/>
+          <include name="createUserAccountAndVerifyAdminModule"/>
+          <include name="closeTheDBConnection"/>
+        </methods>
+      </class> <!-- com.shophunt.product.testngtest.MyAccountTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [CBSuite] -->
